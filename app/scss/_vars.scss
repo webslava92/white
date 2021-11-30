@@ -1,0 +1,20 @@
+$default: #000;
+$contrast: #fff;
+$accent: #ff0008;
+$background: #313343;
+$header-bg: rgba(0,0,0,0.5);
+$slider-controls: rgba(255,255,255,0.5);
+$slider-controls-active: #fff;
+$social: #1892e8;
+$gradient: linear-gradient(90deg, rgba(25, 26, 146, 1) 0, rgba(163, 202, 255, 1) 100%);
+
+
+%OpenSans-400{
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%OpenSans-400{
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: 700;
+}

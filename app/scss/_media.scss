@@ -1,0 +1,141 @@
+@media (max-width: 1200px) {
+  .content {
+    &__imgbox {
+      width: 50%;
+    }
+    &__textbox {
+      width: 50%;
+    }
+    &__img-item-1 {
+      margin-bottom: -70px;
+    }
+    &__img-item-2 {
+      margin-bottom: -70px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    &__img-item-1 {
+      margin-bottom: -30px;
+    }
+    &__img-item-2 {
+      margin-bottom: -30px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__menu-btn {
+      display: flex;
+    }
+  }
+  .menu{
+    &__items{
+      position: fixed;
+      transform: translateY(-300%);
+      top: -200px;
+      display: block;
+      width: 100%;
+    }
+    &__items--active{
+      transform: translateY(0%);
+      max-height: calc(100vh - 110px);
+      left: 0;
+      top: 110px;
+      background-color: $header-bg;
+      z-index: 100;
+      .menu__item + .menu__item{
+        padding-left: 0;
+        margin-left: 0;
+        transition: all .3s;
+      }
+      .menu__item{
+        width: 100%;
+        transition: all .3s;
+        margin: 0;
+      }
+      .menu__item-link{
+        display: block;
+        text-align: center;
+        line-height: 36px;
+        align-items: center;
+        padding: 35px 0;
+        color: $contrast;
+        border: none;
+        border-radius: 0;
+        font-size: 35px;
+      }
+    }
+  }
+
+  .content {
+    &__imgbox {
+      display: none;
+    }
+    &__textbox {
+      width: 100%;
+      margin-left: 0;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+  .footer {
+    &__cookie-inner {
+      flex-direction: column;
+    }
+    &__cookie-text {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    &__top-title {
+      font-size: 30px;
+    }
+    &__bottom-items {
+      flex-direction: column;
+    }
+    &__bottom-item + .header__bottom-item {
+      margin-left: 0;
+    }
+  }
+  .footer {
+    &__top-inner {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__top-logo,
+    &__top-items-wrap,
+    &__top-socials {
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__top-socials {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    &__top-logo {
+      max-height: 80px;
+    }
+    &__top-title {
+      font-size: 22px;
+    }
+  }
+}
